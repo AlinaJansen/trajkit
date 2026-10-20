@@ -1,0 +1,5 @@
+# Trajectories
+*.dcd
+*.xtc
+*.trr
+*.nc
