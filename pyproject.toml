@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "trajkit"
+version = "0.1.0"
+description = "Generic analysis tools for MD trajectories, built on MDAnalysis."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Alina Jansen", email = "alina.jansen@tu-berlin.de" },
+]
+requires-python = ">=3.11"
+dependencies = [
+    "mdanalysis>=2.10",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "sphinx>=7",
+    "furo",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USER/trajkit"
+Documentation = "https://YOUR_USER.github.io/trajkit"
